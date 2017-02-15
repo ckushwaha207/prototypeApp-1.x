@@ -13,14 +13,13 @@
     "devDatabaseType": "h2Disk",
     "prodDatabaseType": "mysql",
     "searchEngine": "elasticsearch",
-    "messageBroker": "kafka",
+    "messageBroker": "false",
     "serviceDiscoveryType": false,
     "buildTool": "gradle",
-    "enableSocialSignIn": false,
+    "enableSocialSignIn": true,
     "useSass": true,
     "clientPackageManager": "yarn",
     "applicationType": "monolith",
-    "clientFramework": "angular1",
     "testFrameworks": [
       "gatling",
       "cucumber",
@@ -31,6 +30,7 @@
     "nativeLanguage": "en",
     "languages": [
       "en"
-    ]
+    ],
+    "clientFramework": "angular1"
   }
 }

@@ -1,0 +1,7 @@
+id;name;price;preparation_time;ingredient;image_url;description;diet;category_id
+1;Paneer Tikka;200;20;Paneer;http://www.vegrecipesofindia.com/wp-content/uploads/2011/10/tandoori-paneer-tikka.jpg;Made up of Paneer.;VEG;1
+2;Chicken Crispy;190;20;Chicken;http://www.vegrecipesofindia.com/wp-content/uploads/2011/10/tandoori-paneer-tikka.jpg;Barbequed chicken.;NON_VEG;2
+3;Veg Biryani;190;20;Chicken;http://www.vegrecipesofindia.com/wp-content/uploads/2011/10/tandoori-paneer-tikka.jpg;Barbequed chicken.;VEG;3
+4;Chicken Biryani;190;20;Chicken;http://www.vegrecipesofindia.com/wp-content/uploads/2011/10/tandoori-paneer-tikka.jpg;Barbequed chicken.;NON_VEG;4
+5;Veg Biryani;190;20;Chicken;http://www.vegrecipesofindia.com/wp-content/uploads/2011/10/tandoori-paneer-tikka.jpg;Barbequed chicken.;VEG;5
+6;Chicken Biryani;190;20;Chicken;http://www.vegrecipesofindia.com/wp-content/uploads/2011/10/tandoori-paneer-tikka.jpg;Barbequed chicken.;EGG;6

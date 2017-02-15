@@ -1,0 +1,21 @@
+{
+    "prototypeApp": {
+        "businessRole" : {
+            "home": {
+                "title": "Business Roles",
+                "createLabel": "Create a new Business Role",
+                "createOrEditLabel": "Create or edit a Business Role",
+                "search": "Search for Business Role"
+            },
+            "created": "A new Business Role is created with identifier {{ param }}",
+            "updated": "A Business Role is updated with identifier {{ param }}",
+            "deleted": "A Business Role is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Business Role {{ id }}?"
+            },
+            "detail": {
+                "title": "Business Role"
+            }
+        }
+    }
+}
