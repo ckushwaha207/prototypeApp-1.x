@@ -37,7 +37,7 @@ public class MenuResource {
     private final Logger log = LoggerFactory.getLogger(MenuResource.class);
 
     private static final String ENTITY_NAME = "menu";
-        
+
     private final MenuService menuService;
 
     public MenuResource(MenuService menuService) {
@@ -104,6 +104,23 @@ public class MenuResource {
     }
 
     /**
+     * GET  /menus/store/{storeId} : get all the menus using store id.
+     *
+     * @param storeId the id of the store to retrieve
+     * @return the ResponseEntity with status 200 (OK) and the list of menus in body
+     * @throws URISyntaxException if there is an error to generate the pagination HTTP headers
+     */
+    @GetMapping("/menus/store/{id}")
+    @Timed
+    public ResponseEntity<List<MenuDTO>> getAllMenusByStoreId(@PathVariable Long id)
+            throws URISyntaxException {
+        log.debug("REST request to get a page of Menus");
+        List<MenuDTO> page = menuService.findAllByStoreId(id);
+        // HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(MenuDTO, "/api/menus");
+        return new ResponseEntity<>(page, null, HttpStatus.OK);
+    }
+
+    /**
      * GET  /menus/:id : get the "id" menu.
      *
      * @param id the id of the menuDTO to retrieve
@@ -135,7 +152,7 @@ public class MenuResource {
      * SEARCH  /_search/menus?query=:query : search for the menu corresponding
      * to the query.
      *
-     * @param query the query of the menu search 
+     * @param query the query of the menu search
      * @param pageable the pagination information
      * @return the result of the search
      * @throws URISyntaxException if there is an error to generate the pagination HTTP headers

@@ -31,6 +31,7 @@
     "languages": [
       "en"
     ],
-    "clientFramework": "angular1"
+    "clientFramework": "angular1",
+    "herokuAppName": "prototype-app-demo"
   }
 }

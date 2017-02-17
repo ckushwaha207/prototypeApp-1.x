@@ -11,5 +11,5 @@ import java.util.List;
  */
 @SuppressWarnings("unused")
 public interface MenuRepository extends JpaRepository<Menu,Long> {
-
+    List<Menu> findAllByStoreId(Long id);
 }
